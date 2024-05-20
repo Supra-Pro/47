@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
           if (this.decodedToken.role[index] == 'Admin') {
             console.log('admin-test');
             console.log(this.decodedToken.role[index]);
-            this.router.navigate(['/english']);
+            this.router.navigate(['/home']);
           } else if (this.decodedToken.role[index] == 'Student') {
             console.log('student-test');
             console.log(this.decodedToken.role[index]);
