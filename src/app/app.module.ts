@@ -18,10 +18,11 @@ import { LoginComponent } from './Pages/login/login.component';
 import { RegisterComponent } from './Pages/register/register.component';
 import { LogoutComponent } from './Pages/logout/logout.component';
 import { NotFoundComponent } from './Pages/not-found/not-found.component';
-import { FooterComponent } from './Components/footer/footer.component';
-import { HeaderComponent } from './Components/header/header.component';
-import { HomeComponent } from './Components/home/home.component';
-import { EnglishComponent } from './Components/english/english.component';
+import { HomeComponent } from './Pages/home/home.component';
+import { NavbarComponent } from './Components/navbar/navbar.component';
+import { IntroComponent } from './Components/intro/intro.component';
+import { TeamComponent } from './Components/team/team.component';
+import { OffersComponent } from './Components/offers/offers.component';
 
 @NgModule({
   declarations: [
@@ -30,10 +31,11 @@ import { EnglishComponent } from './Components/english/english.component';
     RegisterComponent,
     LogoutComponent,
     NotFoundComponent,
-    FooterComponent,
-    HeaderComponent,
     HomeComponent,
-    EnglishComponent
+    NavbarComponent,
+    IntroComponent,
+    TeamComponent,
+    OffersComponent,
   ],
   imports: [
     BrowserModule,
