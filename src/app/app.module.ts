@@ -23,6 +23,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { IntroComponent } from './Components/intro/intro.component';
 import { TeamComponent } from './Components/team/team.component';
 import { OffersComponent } from './Components/offers/offers.component';
+import { FaqComponent } from './Components/faq/faq.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +38,8 @@ import { OffersComponent } from './Components/offers/offers.component';
     IntroComponent,
     TeamComponent,
     OffersComponent,
+    FaqComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

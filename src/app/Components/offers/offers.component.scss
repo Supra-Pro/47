@@ -9,7 +9,8 @@
 }
 
 html {
-  background-color: #fff;
+  background-color:#ffffff;
+  // background-color: antiquewhite;
 }
 
 body {
@@ -28,7 +29,8 @@ body {
 
 h1 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: bolder;
+    color: rgb(143, 143, 140);
     text-align: center;
 }
 
@@ -71,7 +73,9 @@ img {
 
 @media (min-width: 40rem) {
   .cards_item {
-    width: 50%;
+    width: 65%;
+    margin: auto;
+    text-align: center;
   }
 }
 
