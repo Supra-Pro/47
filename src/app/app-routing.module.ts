@@ -6,14 +6,16 @@ import { RegisterComponent } from './Pages/register/register.component';
 import { LogoutComponent } from './Pages/logout/logout.component';
 import { englishGuard } from './Guards/all.guard';
 import { HomeComponent } from './Pages/home/home.component';
+import { FaqComponent } from './Components/faq/faq.component';
 
 const routes: Routes = [
-  {path: '', component: NotFoundComponent},
+  {path: '', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'register', component: RegisterComponent},
   {path: 'logout', component: LogoutComponent},
   {path: '404', component: NotFoundComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'FAQ', component: FaqComponent},
   {path: '**', component: HomeComponent}
 ];
 
