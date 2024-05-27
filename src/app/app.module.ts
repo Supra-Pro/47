@@ -41,7 +41,7 @@ import { QuizComponent } from './Components/quiz/quiz.component';
     OffersComponent,
     FaqComponent,
     FooterComponent,
-    QuizComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
