@@ -126,6 +126,7 @@ body {
   background: var(--color-white);
   position: relative;
   z-index: 1;
+  text-align: center;
 }
 
 .blog-card .description h1 {
@@ -136,6 +137,7 @@ body {
 
 .blog-card .description h2 {
   font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   color: var(--color-grey-dark);
