@@ -7,6 +7,7 @@ import { LogoutComponent } from './Pages/logout/logout.component';
 import { englishGuard } from './Guards/all.guard';
 import { HomeComponent } from './Pages/home/home.component';
 import { FaqComponent } from './Components/faq/faq.component';
+import { QuizComponent } from './Components/quiz/quiz.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: '404', component: NotFoundComponent},
   {path: 'home', component: HomeComponent},
   {path: 'FAQ', component: FaqComponent},
+  {path: 'quiz', component: QuizComponent},
   {path: '**', component: HomeComponent}
 ];
 
