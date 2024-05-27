@@ -1,12 +1,95 @@
-.content { margin-top:54px; }
-.header {padding:15px; position:fixed; top:0; width:100%; z-index:9999; }
-.left-title { width:80px; color:#FFF; font-size:18px; float:left; }
-.right-title { width:150px; text-align:right; float:right; color:#FFF;  }
-.quiz-body { margin-top:15px; padding-bottom:50px; }
-.option-block-container { margin-top:20px; max-width:420px; }
-.option-block { padding:10px; background:aliceblue; border:1px solid #84c5fe; margin-bottom:10px; cursor:pointer; }
-.result-question { font-weight:bold; }
-.c-wrong { margin-left:20px; color:#FF0000; }
-.c-correct {  margin-left:20px; color:green; }
-.last-row { border-bottom:1px solid #ccc; padding-bottom:25px; margin-bottom:25px; }
-.res-header { border-bottom:1px solid #ccc; margin-bottom:15px; padding-bottom:15px; }
+@import "bootstrap/scss/bootstrap";
+
+.header {
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.content {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .quiz-container {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
+.quiz-body {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  .option-block-container {
+    margin-top: 20px;
+  }
+  .option-block {
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+    &:hover {
+      background-color: #e9f5ff;
+      border-color: #007bff;
+    }
+    &.selected {
+      background-color: #d1eaff;
+      border-color: #007bff;
+    }
+    &.correct {
+      background-color: #d4edda;
+      border-color: #28a745;
+    }
+    &.wrong {
+      background-color: #f8d7da;
+      border-color: #dc3545;
+    }
+  }
+}
+
+.result {
+  .res-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .result-question {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  .last-row {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  .c-wrong {
+    color: #dc3545;
+  }
+  .c-correct {
+    color: #28a745;
+  }
+}
+
+button {
+  width: 120px;
+  transition: background-color 0.2s;
+}
+
+button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+button:not(:disabled):hover {
+  background-color: darken($primary, 10%);
+}
