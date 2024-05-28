@@ -36,6 +36,7 @@
     margin-bottom: 10px;
     cursor: pointer;
     transition: background-color 0.2s, border-color 0.2s;
+    border: 1px solid black !important;
     &:hover {
       background-color: #e9f5ff;
       border-color: #007bff;
