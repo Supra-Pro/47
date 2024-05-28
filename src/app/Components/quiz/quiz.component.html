@@ -1,31 +1,34 @@
-<header class="header bg-primary">
-  <div class="left-title">JS Quiz</div>
-  <div class="right-title">Total Questions: <span>{{ totalque }}</span></div>
-  <div class="clearfix"></div>
+<app-navbar></app-navbar>
+
+<header class="header bg-primary text-white">
+  <div class="container d-flex justify-content-between align-items-center">
+  </div>
 </header>
-<div class="content">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-12">
-        <div id="result" class="quiz-body">
-          <form name="quizForm" (submit)="nextQuestion($event)">
-            <fieldset class="form-group">
-              <h4><span>{{ quiz.JS[currentque].id }}.</span> <span>{{ quiz.JS[currentque].question }}</span></h4>
-              <div class="option-block-container">
-                <div *ngFor="let option of quiz.JS[currentque].options[0] | keyvalue" class='form-check option-block'>
-                  <label class='form-check-label'>
-                    <input type='radio' class='form-check-input' name='option' [value]='option.value' (change)='selectOption(option.value)'>
-                    <span>{{ option.value }}</span>
-                  </label>
-                </div>
-              </div>
-            </fieldset>
-            <button type="button" name="previous" id="previous" class="btn btn-success" (click)="previousQuestion($event)" [disabled]="currentque <= 0">Previous</button>
-            &nbsp;
-            <button type="submit" name="next" id="next" class="btn btn-success">Next</button>
-          </form>
+
+<div class="content py-5 d-flex justify-content-center align-items-center">
+  <div class="quiz-container">
+    <div id="result" class="quiz-body p-4 shadow rounded">
+      <form name="quizForm" (submit)="nextQuestion($event)">
+        <fieldset class="form-group">
+          <h4><span>{{ quiz.JS[currentque].id }}.</span> <span>{{ quiz.JS[currentque].question }}</span></h4>
+          <div class="option-block-container mt-4">
+            <div *ngFor="let option of quiz.JS[currentque].options[0] | keyvalue" 
+                 [ngClass]="{'option-block p-2 rounded border': true, 'selected': selectedopt === option.value, 'correct': quiz.JS[currentque].status === 'correct' && option.value === quiz.JS[currentque].answer, 'wrong': quiz.JS[currentque].status === 'wrong' && option.value === selectedopt }"
+                 (click)="selectOption(option.value)">
+              <label class='form-check-label w-100'>
+                <input type='radio' class='form-check-input me-2' name='option' [value]='option.value'>
+                <span>{{ option.value }}</span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="d-flex justify-content-between mt-4">
+          <button type="button" name="previous" id="previous" class="btn btn-secondary" (click)="previousQuestion($event)" [disabled]="currentque <= 0">Previous</button>
+          <button type="submit" name="next" id="next" class="btn btn-primary">Next</button>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>
+
+<app-footer></app-footer>
