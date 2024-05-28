@@ -26,6 +26,7 @@ import { OffersComponent } from './Components/offers/offers.component';
 import { FaqComponent } from './Components/faq/faq.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { QuizComponent } from './Components/quiz/quiz.component';
+import { AIComponent } from './Components/ai/ai.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { QuizComponent } from './Components/quiz/quiz.component';
     OffersComponent,
     FaqComponent,
     FooterComponent,
-    QuizComponent
+    QuizComponent,
+    AIComponent
   ],
   imports: [
     BrowserModule,

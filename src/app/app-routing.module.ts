@@ -8,6 +8,7 @@ import { englishGuard } from './Guards/all.guard';
 import { HomeComponent } from './Pages/home/home.component';
 import { FaqComponent } from './Components/faq/faq.component';
 import { QuizComponent } from './Components/quiz/quiz.component';
+import { AIComponent } from './Components/ai/ai.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'FAQ', component: FaqComponent},
   {path: 'quiz', component: QuizComponent},
+  {path: 'ai', component: AIComponent},
   {path: '**', component: HomeComponent}
 ];
 

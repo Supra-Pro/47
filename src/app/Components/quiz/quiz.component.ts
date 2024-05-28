@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { jsPDF } from 'jspdf';
 
 @Component({
   selector: 'app-quiz',
@@ -6,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quiz.component.scss']
 })
 export class QuizComponent implements OnInit {
+
+  user = {
+    name: 'John Doe' 
+  };
+
   quiz = {
     JS: [
       {
@@ -67,6 +73,38 @@ export class QuizComponent implements OnInit {
       }
     }
   }
+
+
+  generateCertificate() {
+    // Create a new jsPDF instance
+    const doc = new jsPDF();
+
+    // Generate HTML content for the certificate
+    const certificateContent = `
+      <h1>Certificate of Completion</h1>
+      <p>This certifies that ${this.user.name} has successfully completed the quiz.</p>
+      <p>Score: ${this.score}/${this.totalque}</p>
+      <p>Date: ${new Date().toLocaleDateString()}</p>
+    `;
+
+    // Add HTML content to the PDF
+    doc.html(certificateContent, {
+      callback: () => {
+        // Save or display the PDF
+        doc.save('certificate.pdf'); // Save PDF with a filename
+        // Alternatively, you can display the PDF within the browser:
+        // doc.output('dataurlnewwindow');
+      }
+    });
+  }
+
+  handleQuizCompletion() {
+    // Calculate the score and display the result
+    this.calculateScore();
+    // Generate the certificate
+    this.generateCertificate();
+  }
+
 
   checkAnswer(option: string): void {
     const answer = this.quiz.JS[this.currentque].answer;
