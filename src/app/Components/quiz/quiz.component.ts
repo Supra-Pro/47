@@ -24,7 +24,7 @@ export class QuizComponent implements OnInit {
         score: 0,
         status: ""
       },
-      // ... include all other questions
+      // ... other questions go here
     ]
   };
 
