@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+}
+
+html {
+    font-family: 'Monserrat';
+    font-size: 20px;
+}
+
+
+.textMatn {
+    margin-bottom: 100px;
+    position: absolute;
+  left: 10%;
+  cursor: pointer;
+
+
+}
+
+.header__essential {
+    margin-bottom: 20px;
+    margin-left: 100px;
+    color: white;
+    border: 1px solid white;
+
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.header__essential:hover{
+    background: white;
+    color: black;
+}
+
+
+
+.header__essential:first-child {
+    margin-top: 15%;
+}
+
+
+
+.sectionWord {
+    display: none;
+}
+
+.sectionWord.active{
+    display: block;
+}
+
+
+
+.textWord {
+    padding: 20px 120px;
+    border: 1px solid white;
+    border-radius: 30px;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.textWord:hover{
+    background: white;
+    color: black;
+}
+
+
+
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    flex-direction: column;
+    padding: 50px 0;
+}
+
+section h1 {
+
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    margin-bottom: 10px;
+   
+    
+}
+body {
+    background: green;
+    
+}
+
+.header__about {
+ width: 100%;
+ height: 100vh;
+ /* background: darkblue; */
+ position: absolute;
+
+
+}
+
+.header__span {
+    margin-bottom: 20px;
+    margin-left: 100px;
+    color: white;
+    border: 1px solid white;
+
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.video__frame {
+    display: flex;
+    align-items: center;
+    margin-bottom: 120px;
+    margin-left: 100px;
+}
+
+
+.header__chart-text {
+text-align: center;
+background: darkblue; // shetta
+color: white;
+
+}
+
+.text {
+   text-align: center;
+
+  margin-left: 200px;
+
+}
+
+
+
+.header__span:hover{
+    background: white;
+    color: black;
+}
+
+.header__chart {
+    width: 100%;
+    height: 100vh;
+    background: green; // shetta
+    position: absolute;
+    display: flex;
+    margin: auto;
+  
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+a:hover{
+    background: white;
+    color: black;
+}
+
+.cart1 {
+    margin-top: 40px;
+}
+
+.cart2 {
+    margin-top: 40px;
+}
+
+.cart3 {
+    margin-top: 40px;
+}
+
+
+
+
+.header__span:first-child {
+    margin-top: 15%;
+}
+
+
+
+section p {
+    text-align: center;
+   
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+.texts p {
+    color: white;
+    text-align: left;
+   text-transform: lowercase;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: 35px;
+   display: flex;
+   justify-content: center;
+   margin-top: 20px;
+}
+.texts p.replay{
+ text-align: right;
+}
+
+.text-answer{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    color: white;
+ position: absolute;
+ margin-right: 20%;
+ margin-bottom: 20px;
+ transform: translateY(-20px);
+    right: 0;
+    
+}
+
+.inputType {
+    width: 180px;
+    height:30px ;
+    font-size: 23px
+}
+
+.btn {
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.btnStop {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+
+
+/*   */
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* 
+body {
+    background: rgb(87, 87, 202);
+    
+} */
+
+.header__section-container {
+    width: 1440px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+
+
+}
+
+.header__section-two {
+    width: 100%;
+    height: 100vh;
+  
+    background: green;
+
+}
+
+.select__unit {
+    top: 20%;
+    left: 5%;
+    position: absolute;
+}
+
+.select__unit-text {
+    font-size: 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+  
+}
+
+
+.section__answer {
+    font-size: 70px;
+    font-weight: 800;
+    color: white;
+   
+}
+.inputType {
+    font-size: 30px;
+ 
+
+}
+
+.btn {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.watchVideo {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.sectionMainCss {
+  margin-left: 30%;
+  transform: translateY(-130px);
+ 
+    
+ 
+}
+
+.form-select {
+    font-size: 20px;
+    border: 1px solid white;
+    background: rgb(87, 87, 202);
+    color: white;
+    padding: 10px;
+    
+    
+}
+
+.btnRandom {
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+option {
+    color: white;
+}
+
+.sectionAbout{
+    display: none;
+}
+
+.sectionAbout.active {
+    display: block;
+}
+
+.header__about.active {
+    display: block;
+}
+
+
+.sectionAbout {
+    display: none;
+}
+.sectionAbout.active {
+    display: block;
+}
+
+.header__chart-text.active {
+    display: block;
+}
+
+.header__chart-text{
+    display: none;
+}
+
+
+
+
+.micra_text{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+    transform: translateX(-100px);
+    margin-bottom: 40px;
+}
+
+
+
+.container{
+    display: flex;
+}
+
+
+.word{
+    
+}
+
+.section__answer{
+    transform: translateX(20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+  
+
+.header__about{
+    flex-direction: column;
+}
+
+
+.home_image{
+    display: none;
+}
+
+
+.header__chart{
+    flex-direction: column;
+}
+
+
+
+.video__frame{
+    display: none;
+}
+
+
+
+.select__unit{
+    transform: translateX(120px);
+}
+
+.sectionMainCss{
+   transform: translate(-580px,150px);
+}
+
+option{
+    font-size: 10px;
+}
+
+.form-select{
+    
+}
+
+
+
+
+
+
+
+
+}    
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+   
+
+}
+
+
+
+
+
+
+.navbar-brand{
+    font-size: 40px;
+    font-weight: 700;
+    
+}
+
+.navbar{
+    padding: 0px 100px 0px 100px;
+}
+
+.watchVideo{
+    transform: translateY(80px);
+}
+
+
+
+
+
+.header__about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.home_image{
+    width: 1200px;
+    height: 700px;
+}
