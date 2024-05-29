@@ -27,6 +27,7 @@ import { FaqComponent } from './Components/faq/faq.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { QuizComponent } from './Components/quiz/quiz.component';
 import { AIComponent } from './Components/ai/ai.component';
+import { CertificateComponent } from './Components/certificate/certificate.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { AIComponent } from './Components/ai/ai.component';
     FaqComponent,
     FooterComponent,
     QuizComponent,
-    AIComponent
+    AIComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,
