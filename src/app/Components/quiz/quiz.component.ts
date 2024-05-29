@@ -282,10 +282,8 @@ export class QuizComponent implements OnInit {
     if (resultElement) {
       resultElement.classList.add('result');
       resultElement.innerHTML = `
-      <a href="/certificate" style="width: 10%; color: green">
-      Get Your Certificate
-      </a>    
-    <h1 class='res-header'>Total Score: &nbsp;${scr}/${this.totalque}</h1>`;
+      <a href="/certificate" style="color: green" class="btn">Get Your Certificate</a> 
+      <h1 class='res-header'>Total Score: &nbsp;${scr}/${this.totalque}</h1>`;
       for (let j = 0; j < this.totalque; j++) {
         const res = this.quiz.JS[j].score === 0 ? `<span class="wrong">${this.quiz.JS[j].score}</span><i class="fa fa-remove c-wrong"></i>` : `<span class="correct">${this.quiz.JS[j].score}</span><i class="fa fa-check c-correct"></i>`;
         resultElement.innerHTML += `
