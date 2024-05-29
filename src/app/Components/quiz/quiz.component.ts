@@ -281,13 +281,17 @@ export class QuizComponent implements OnInit {
     const resultElement = document.getElementById('result');
     if (resultElement) {
       resultElement.classList.add('result');
-      resultElement.innerHTML = `<h1 class='res-header'>Total Score: &nbsp;${scr}/${this.totalque}</h1>`;
+      resultElement.innerHTML = `
+      <a href="/certificate" style="width: 10%; color: green">
+      Get Your Certificate
+      </a>    
+    <h1 class='res-header'>Total Score: &nbsp;${scr}/${this.totalque}</h1>`;
       for (let j = 0; j < this.totalque; j++) {
         const res = this.quiz.JS[j].score === 0 ? `<span class="wrong">${this.quiz.JS[j].score}</span><i class="fa fa-remove c-wrong"></i>` : `<span class="correct">${this.quiz.JS[j].score}</span><i class="fa fa-check c-correct"></i>`;
         resultElement.innerHTML += `
           <div class="result-question"><span>Q ${this.quiz.JS[j].id}</span> &nbsp;${this.quiz.JS[j].question}</div>
           <div><b>Correct answer:</b> &nbsp;${this.quiz.JS[j].answer}</div>
-          <div class="last-row"><b>Score:</b> &nbsp;${res}</div>`;
+          <div class="last-row"><b>Score:</b> &nbsp;${res}</div> `;
       }
     }
   }
